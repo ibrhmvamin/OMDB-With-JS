@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="movie-selection">
+        <h2>Movie Search</h2>
+        <form id="search-form">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input
+              type="text"
+              class="title-input"
+              id="title"
+              name="title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+              <option value="movie">Movie</option>
+              <option value="series">Series</option>
+              <option value="episode">Episode</option>
+            </select>
+          </div>
+          <button type="button" class="search-button">Search</button>
+        </form>
+        <div id="results"></div>
+        <div id="pagination"></div>
+        <div id="details"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
